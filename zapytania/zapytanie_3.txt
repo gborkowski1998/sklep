@@ -1,0 +1,3 @@
+SELECT imie, nazwisko, PESEL, wynagrodzenie, nazwa_uslugi, cena
+FROM pracownicy, uslugi
+WHERE wynagrodzenie<=2300 AND nazwisko="K*";

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="PL">
+<head>
+	<title>Sklep komputerowy</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="PESEL">
+	
+	<link rel="stylesheet" type="text/css" href="personalizacja.css">
+	
+	<script type="text/javascript">
+		function sprawdzenie(){
+			var usluga = document.getElementById("usluga").value;
+		
+			if(usluga=='Wymiana zasilacza'){
+				document.getElementById("wynik").innerHTML = '<font color="green">Wykonujemy tę usługę. Koszt usługi: 50 zł</font>'
+			}
+			else if(usluga=='Czyszczenie obudowy'){
+				document.getElementById("wynik").innerHTML = '<font color="green">Wykonujemy tę usługę. Koszt usługi: 70 zł</font>'
+			}
+			else if(usluga=='Montaz chlodzenia wodnego'){
+				document.getElementById("wynik").innerHTML = '<font color="green">Wykonujemy tę usługę. Koszt usługi: 50 zł</font>'
+			}
+			else{
+				document.getElementById("wynik").innerHTML = '<font color="red">Nie wykonujemy takiej usługi. Przepraszamy!</font>'
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="baner">
+		<a href="glowna.html">
+			<h1>
+				Sklep komputerowy
+			</h1>
+		</a>
+	</div>
+	<div id="panel_lewy">
+		<ol>
+			<li>
+				<a href="oferta.html">
+					Nazwa usługi
+				</a>
+				<ul>
+					<li>Wymiana zasilacza</li>
+					<li>Czyszczenie obudowy</li>
+					<li>Montaz chlodzenia wodnego</li>
+				</ul>
+			</li>
+		</ol>
+	</div>
+	<div id="panel_prawy">
+		<h3>
+			Wpisz interesującą Cię usługę
+		</h3>
+		<input type="text" id="usluga"><input type="button" onclick="sprawdzenie();" value="Wyślij"><br>
+		<span id="wynik"></span>
+		<br><br>
+		<img src="../przeskalowane/tabela_uslugi.png" alt="tabela_uslugi.png">
+	</div>
+	<div id="stopka">
+		<h2>
+			Stronę wykonał: 
+			<a href="kontakt.html">
+				00000000000
+			</a>
+		</h2>
+	</div>
+</body>
+</html>

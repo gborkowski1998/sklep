@@ -1,0 +1,211 @@
+﻿<!DOCTYPE HTML>
+<html lang="PL">
+<head>
+	<title>Egzamin kwalifikacyjny e14</title>
+	
+	<meta charset="UTF-8">
+	<meta name="author" content="Grzegorz Borkowski">
+	<meta name="description" content="Egzamin kwalifikacyjny e14 stworzony przez Grzegorza Borkowskiego z zakresu html, mysql oraz javascript">
+	<meta name="keywords" content="Egzamin, kwalifikacyjny, e14, stworzony, przez, Grzegorza, Grzegorz, Borkowski, Borkowskiego, zakres, zakresu, html, HTML 5, mysql, javascript, oraz, php, xampp, wiai">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="baner">
+		<span id="gora">
+			Sklep komputerowy
+		</span>
+	</div>
+	
+	<div id="lewy">
+		&ensp;
+		<span class="strzalka_dol">
+			<a href="#dol"><img src="img/strzalka_dol.png" alt="strzalka_dol" width="100px"></a>
+		</span>
+	</div>
+	
+	<div id="glowny">
+				<div class="odnosniki"><a class="odnosnik" href="#zapoznanie">Zapoznanie</a></div>
+				<div class="odnosniki"><a class="odnosnik" href="#baza_danych">Baza danych</a></div>
+				<div class="odnosniki"><a class="odnosnik" href="#witryna_internetowa">Witryna internetowa</a></div>
+				<div class="odnosniki"><a class="odnosnik" href="#skrypt">Skrypt</a></div>
+				
+		<span class="tytul" id="zapoznanie">
+			Zapoznanie
+		</span>
+		
+			<span class="akapit">
+				Wykonaj aplikację dla sklepu komputerowego. Wykorzystaj pakiet XAMPP do stworzenia bazy danych, aplikację Notepad++ do stworzenia strony internetowej wraz z wymaganym stylem i działającym skryptem oraz program graficzny Gimp/Paint do przerobienia załączonej grafiki na podane wymiary.
+			</span>
+			
+			<span class="akapit">
+				Zaloguj się na konto <span class="gruby">uczeń</span>. Hasło do konta uczeń to: <span class="gruby">3gzam!n2017</span>. Na pulpicie konta uczeń stwórz folder, w którym będą znajdować się skończone prace. Jako nazwę folderu wpisz swój numer <span class="gruby">PESEL</span>.
+			</span>
+			
+		<span class="tytul" id="baza_danych">
+			Baza danych
+		</span>
+		
+			<span class="akapit">
+				Uruchom pakiet XAMPP, zaznacz w nim serwery: Apache oraz MySQL i uruchom serwer. Wejdź na uruchomiony serwer i stwórz nową bazę danych o nazwie <span class="gruby">Komputery</span>. Wykonaj zrzut ekranu po utworzeniu bazy danych z widocznym kodem MySQL. Zrzut ekranu zapisz jako <span class="gruby">baza.png</span> w nowo utworzonym folderze <span class="gruby">Zrzuty</span> w folderze z numerem PESEL.
+			</span>
+				<img class="obrazek" src="img/relacja_baza.png" ALT="relacja_baza.png">
+				
+			<span class="akapit">
+				Stwórz dwie tabele: <span class="gruby">Pracownicy</span> i <span class="gruby">Uslugi</span> zgodnie ze schematem widocznym powyżej. Po stworzeniu tabel wykonaj dwa zrzuty ekranu z widocznym kodem MySQL zgodnie z następującym nazewnictwem: <span class="gruby">tabela_pracownicy.png</span> ukazujący proces stworzenia tabeli <span class="gruby">Pracownicy</span> oraz <span class="gruby">tabela_uslugi.png</span> ukazujący proces stworzenia tabeli <span class="gruby">Uslugi</span>. Wykonane zrzuty ekranu zapisz w folderze <span class="gruby">Zrzuty</span>.
+			</span>
+			
+			<span class="akapit">
+				Po stworzeniu tabel uzupełnij je wartościami podanymi poniżej. Po zakończeniu wykonaj dwa zrzuty ekranu: <span class="gruby">wpisywanie_pracownicy.png</span> po wpisaniu danych do tabeli <span class="gruby">Pracownicy</span> oraz <span class="gruby">wpisywanie_uslugi.png</span> po wpisaniu danych do tabeli <span class="gruby">Uslugi</span>. Wykonane zrzuty ekranu zapisz w folderze <span class="gruby">Zrzuty</span>.<br><br>
+					<span class="gruby">Pracownicy</span>
+			:</span><br>
+			
+			<span class="odstep">
+					id_pracownika: 1, 2, 3<br>
+					imie: Mariola, Monika, Krzysztof<br>
+					nazwisko: Nowakowska, Kowalska, Nosal<br>
+					PESEL: 89020594738, 86030249538, 92010811458<br>
+					rok_urodzenia: 1989-02-05, 1986-03-02, 1992-01-08<br>
+					wynagrodzenie: 2500, 2300, 2200<br><br>
+			</span>
+					<span class="gruby">Uslugi</span>:<br><br>
+					
+			<span class="odstep">
+					id_pracownik: 1, 2, 3<br>
+					nazwa_uslugi: wymiana zasilacza, czyszczenie obudowy, montaz chlodzenia wodnego<br>
+					cena: 50, 70, 50<br><br>
+			</span>
+			
+			<span class="akapit">
+				Połącz tabelę <span class="gruby">Pracownicy</span> z tabelą <span class="gruby">Uslugi</span> za pomocą relacji jeden do wielu. Podczas tworzenia relacji klucz podstawowy o nazwie <span class="gruby">id_pracownika</span> łączy się z wierszem <span class="gruby">id_pracownik</span> z tabeli <span class="gruby">Uslugi</span> tworząc klucz obcy dla wiersza <span class="gruby">id_pracownik</span>. Po wykonaniu zapytania wykonaj zrzut ekranu z widocznym kodem MySQL i zapisz go pod nazwą <span class="gruby">relacja.png</span> w folderze <span class="gruby">Zrzuty</span>.
+			</span>
+			
+			<span class="akapit">
+				Utwórz zapytania podane poniżej. Po wykonaniu każdego zapytania utwórz nowy plik w nowo utworzonym folderze <span class="gruby">zapytania</span> i zapisz go zgodnie z następującym nazewnictwem: <span class="gruby">zapytanie_1.txt</span> zawierający kod wykonania pierwszego zapytania, <span class="gruby">zapytanie_2.txt</span> zawierający kod wykonania drugie zapytania oraz <span class="gruby">zapytanie_3.txt</span> zawierający kod wykonania trzeciego zapytania.<br><br>
+				<span class="gruby">Zapytanie 1:</span>
+			</span><br>
+			
+			<span class="odstep">
+				- wyświetl imie, nazwisko, PESEL oraz wynagrodzenie z tabeli <span class="gruby">Pracownicy</span>
+			</span><br><br>
+				<span class="gruby">Zapytanie 2:</span><br><br>
+				
+			<span class="odstep">
+				- wyświetl imie i nazwisko z tabeli <span class="gruby">Pracownicy</span>, gdzie <span class="gruby">wynagrodzenie</span> jest większe niż 2250 <br><br>
+			</span>
+				<span class="gruby">Zapytanie 3:</span><br><br>
+				
+			<span class="odstep">
+				- wyświetl imie, nazwisko, PESEL, wynagrodzenie, nazwa_uslugi oraz cena z tabel <span class="gruby">Pracownicy</span> i <span class="gruby">Uslugi</span>, gdzie <span class="gruby">wynagrodzenie</span> jest mniejsze lub równe 2300 oraz <span class="gruby">nazwisko</span> zaczyna się na literę K
+			</span>
+			
+		<span class="tytul" id="witryna_internetowa">
+			Witryna internetowa
+			
+		</span>
+		
+			<span class="akapit">
+				Wykorzystując edytor graficzny Gimp lub Paint przeskaluj zrzuty ekranu <span class="gruby">baza.png</span>, <span class="gruby">tabela_uslugi.png</span> oraz <span class="gruby">tabela_pracownicy.png</span> na wymiary: 300px szerokość obrazka oraz 200px wysokości obrazka. Przeskalowane zrzuty ekranu zapisz w nowo utworzonym folderze o nazwie <span class="gruby">przeskalowane</span>.
+			</span>
+			
+			<span class="akapit">
+				Wykorzystując program Notepad++ wykonaj witrynę internetową dla sklepu komputerowego. Stwórz następujące pliki: <span class="gruby">glowna.html</span>, <span class="gruby">oferta.html</span>, <span class="gruby">kontakt.html</span> i zapisz je w nowo utworzonym folderze o nazwie <span class="gruby">strona</span>. Każda strona wykorzystuje zewnętrzny arkusz stylów o nazwie <span class="gruby">personalizacja.css</span>, który w odpowiedni sposób jest podłączony do każdej ze stron. Arkusz <span class="gruby">personalizacja.css</span> również znajduje się w folderze <span class="gruby">strona</span>.<br><br>
+			</span>
+			
+			<span class="akapit">
+				Każda strona wykonana jest tym samym schematem. Jedynym wyjątkiem jest panel_prawy, który jest inny na każdej ze stron.<br><br>
+			</span>
+			
+			<span class="akapit">
+				Ogólny schemat każdej ze stron:<br><br>
+			</span>
+			
+			<span class="odstep">
+				- tytuł strony to "Sklep komputerowy",<br>
+				- strona składa się z czterech divów: baner, panel_lewy, panel_prawy oraz stopka,<br>
+				- posiada metę, która koduje znaki uwzględniając polskie znaki diakrytyczne,<br>
+				- posiada metę, która specyfikuje autora strony. W wartości mety należy podać swój numer PESEL,<br>
+				- divy panel_lewy oraz panel_prawy sąsiadują ze sobą,<br>
+				- w banerze znajduje się wyśrodkowany nagłówek poziomu pierwszego zawierający tekst "Witaj na stronie naszego sklepu komputerowego". Treść baneru jest także odsyłaczem do strony <span class="gruby">glowna.html</span><br>
+				- w panel_lewy znajduje się zagnieżdżona lista nienumerowana oraz numerowana. Lista nienumerowana posiada kwadraty jako punktor. Pierwszy element listy numerycznej zawiera odnośnik do strony <span class="gruby">oferta.html</span><br>
+				- stopka zawiera napis "Stronę wykonał: 00000000000" wyrównany do prawej, gdzie w miejscu zer należy podać swój numer PESEL. Numer PESEL jest także odnośnikiem do strony <span class="gruby">kontakt.html</span>.<br><br>
+			</span>
+			
+			<img class="obrazek" src="img/glowna.png" alt="glowna.png">
+			
+			<span class="akapit">
+				Schemat strony <span class="gruby">glowna.html</span>:<br><br>
+			</span>
+			
+			<span class="odstep">
+				- w panel_prawy znajduje się nagłówek poziomu drugiego zawierający tekst "Witaj na stronie naszego sklepu komputerowego",<br>
+				- w panel_prawy pod nagłówkiem znajduje się paragraf o treści "Znajdziesz na niej usługi świadczone przez nas jak również możesz umówić wizytę z jednym z naszych specjalistów",<br>
+				- w panel_prawy pod paragrafem znajduje się przeskalowany zrzut ekranu o nazwie <span class="gruby">baza.png</span>. Jego alternatywny tekst to <span class="gruby">baza.png</span><br><br>
+			</span>
+			<img class="obrazek" src="img/oferta.png" alt="oferta.png">
+			
+			<span class="akapit">
+				Schemat strony <span class="gruby">oferta.html</span>:<br><br>
+				- w panel_prawy znajduje się nagłówek trzeciego stopnia o treści "Wpisz interesującą Cię usługę",<br>
+				- w panel_prawy pod nagłówkiem znajduje się pole do wprowadzania danych typu tekstowego,<br>
+				- w panel_prawy obok pola do wprowadzania danych znajduje się przycisk o wartości "Wyślij" ze zdefiniowaną funkcją w zdarzeniu onclick,<br>
+				- w panel_prawy pod przyciskiem znajdują się dwa znaczniki końca linii, a pod nimi przeskalowany zrzut ekranu o nazwie <span class="gruby">tabela_uslugi.png</span>. Jego alternatywny tekst to <span class="gruby">tabela_uslugi.png</span><br><br>
+			</span>
+			<img class="obrazek" src="img/kontakt.png" alt="kontakt.png">
+			
+			<span class="akapit">
+				Schemat strony <span class="gruby">kontakt.html</span>:<br><br>
+			</span>
+			
+			<span class="odstep">
+				- w panel_prawy znajduje się nagłówek drugiego stopnia o treści "Skontaktuj się z nami",<br>
+				- w panel_prawy pod nagłówkiem znajduje się formularz, a w nim tabela 2x4 o zdefiniowanej szerokości 100%,<br>
+				- w panel_prawy wszystkie pola do wprowadzania danych są typu tekstowego oprócz pola o treści "Telefon:", który jest typu telefonowego,<br>
+				- w panel_prawy pod tabelą znajduje się przycisk wysyłania danych. <br>
+				- w panel_prawy pod formularzem znajduje się przeskalowany zrzut ekranu o nazwie <span class="gruby">tabela_pracownicy.png</span>. Jego alternatywny tekst to <span class="gruby">tabela_pracownicy.png</span><br><br>
+			</span>
+			
+			<span class="akapit">
+				Schemat arkusza stylów <span class="gruby">personalizacja.css</span>:<br><br>
+			</span>
+			
+			<span class="odstep">
+				- baner: kolor tła #3300CC, szerokość 900px, wyśrodkowanie tekstu, kolor czcionki biały, grubość czionki pogrubiona, marginesy wewnętrze: 20px od góry oraz 20px od dołu,<br>
+				- panel_lewy: szerokość 300px, wysokość 500px, kolor tła #0033FF, rozmiar czcionki 20px, odstęp pomiędzy liniami 150%, rozstrzelenie liter 2px,<br>
+				- panel_prawy: szerokość 600px, wysokość 500px, kolor tła #33FFCC,<br>
+				- stopka: kolor tła #99FF99, szerokość 900px, marginesy wewnętrze: 20px od góry oraz 20px od dołu, wyrównanie tekstu do prawej, kolor czcionki biały,<br>
+				- inne: wcięcie paragrafu 15px, zewnętrzny margines obrazka od lewej 100px, lista nienumerowana posiada kwadraty jako punktor, szerokość tabeli to 100%, nieodwiedzony link jest koloru białego + bez podkreślenia, odwiedzony link jest koloru pomarańczowego + bez podkreślenia,<br><br>
+			</span>
+			
+		<span class="tytul" id="skrypt">
+			Skrypt
+			
+		</span>
+		
+		<span class="akapit">
+			Wykonaj skrypt w języku wykonywalnym po stronie klienta, który w zależności od podanej wartości wypisze wartości podane poniżej. Skrypt pobiera wartość z pola do wprowadzania danych typu tekstowego ze strony <span class="gruby">oferta.html</span> i wypisuje stosowną informację poniżej pola. Pierwsze trzy przypadki wypisują teksty <span class="gruby">zieloną</span> czcionką, a pozostały przypadek wypisuje tekst czcionką koloru <span class="gruby">czerwonego</span>.
+		</span>
+			<img class="obrazek" src="img/komunikat.png" alt="komunikat.png">
+			
+		<span class="akapit">
+			Przykład zastosowania. Po wprowadzeniu treści "Wymiana chłodzenia", pod polem pojawia się tekst napisany <span class="gruby">czerwonym</span> kolorem z komunikatem o treści "Nie wykonujemy takiej usługi. Przepraszamy!".
+		</span>
+			<img class="obrazek" src="img/blad.png" alt="blad.png">
+			<br><br>
+			<a class="klucz" href="strona/glowna.html">Klucz odpowiedzi</a>
+	</div>
+	
+	<div id="prawy">
+		<span class="strzalka">
+			<a href="#gora"><img src="img/strzalka.png" alt="strzalka" width="100px"></a>
+		</span>
+	</div>
+	
+	<div class="czyscik"></div>
+	
+	<div id="stopka">
+		&copy; <span id="dol">2017 Grzegorz Borkowski - Wszelkie prawa zastrzeżone!</span>
+	</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+body{
+	background-color: #222222;
+	color: #FFFFFF;
+	font-size: 28px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#baner{
+	width: 100%;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 2.5px 2.5px 4px #000000;
+}
+
+#lewy{
+	width: 10%;
+	height: 100%;
+	float: left;
+}
+
+#glowny{
+	float: left;
+	width: 80%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+#prawy{
+	float: left;
+	width: 10px;
+}
+
+.czyscik{
+	clear: both;
+}
+
+#stopka{
+	width: 100%;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 2.5px 2.5px 4px #000000;
+}
+
+.strzalka{
+	position: fixed;
+	right: 10px;
+	bottom: 20px;
+}
+
+.strzalka_dol{
+	position: fixed;
+	left: 10px;
+	bottom: 20px;
+}
+
+.tytul{
+	width: auto;
+	height: auto;
+	display: block;
+	text-align: center;
+	font-weight: 700;
+	font-size: 38px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.akapit{
+	width: auto;
+	height: auto;
+	display: block;
+	text-indent: 40px;
+	text-align: justify;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-bottom: 15px;
+}
+
+.odstep{
+	line-height: 150%;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.gruby{
+	font-weight: 700;
+}
+
+.obrazek{
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+}
+
+.odnosniki{
+	background-color: #222222;
+	color: #FFFFFF;
+	width: 25%;
+	float: left;
+	height: 60px;
+	text-align: center;
+	font-size: 30px;
+	position: sticky;
+	top: 0px;
+}
+
+.odnosnik{
+	display: block;
+	width: 100%;
+	height: 50px;
+	color: #FFFFFF;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.odnosnik:hover{
+	background-color: #FFFFFF;
+	color: #222222;
+	text-decoration: none;
+}
+
+.odnosnik:visited{
+	background-color: #222222;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.odnosnik:link{
+	background-color: #222222;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.klucz:link{
+	color: #000000;
+	text-decoration: none;
+}
+
+.klucz:visited{
+	color: #000000;
+	text-decoration: none;
+}
+
+.klucz:hover{
+	color: #000000;
+	text-decoration: underline;
+}
+
+a{
+	font-size: 30px;
+}

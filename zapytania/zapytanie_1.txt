@@ -1,0 +1,2 @@
+SELECT imie, nazwisko, PESEL, wynagrodzenie
+FROM pracownicy;
